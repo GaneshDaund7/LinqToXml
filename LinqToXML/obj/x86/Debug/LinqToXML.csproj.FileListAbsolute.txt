@@ -1,0 +1,4 @@
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\bin\Debug\LinqToXML.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\bin\Debug\LinqToXML.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\obj\x86\Debug\LinqToXML.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\obj\x86\Debug\LinqToXML.pdb
