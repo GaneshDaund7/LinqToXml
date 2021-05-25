@@ -10,28 +10,35 @@ namespace LinqToXML
     {
         static void Main(string[] args)
         {
-            //XDocument XMLDoc = new XDocument(
-            //    new XDeclaration("1.0","UTF-8","Yes"),
-            //    new XComment("Creating an Xml Comment"),
-            //    new XElement("Students",
-            //       from Students in Student.GetAllDetails()
-            //       select new XElement("Student",new XAttribute("Id",Students.id) 
-            //                                     ,new XElement("Name",Students.name)
-            //                                     ,new XElement("Gender",Students.Gender)
-            //                                     ,new XElement("Marks",Students.Marks)
+
+
+
+
+
+            // Creating Xml File Using Linq:
+
+            XDocument XMLDoc = new XDocument(
+                new XDeclaration("1.0","UTF-8","Yes"),
+                new XComment("Creating an Xml Comment"),
+                new XElement("Students",
+                   from Students in Student.GetAllDetails()
+                   select new XElement("Student",new XAttribute("Id",Students.id) 
+                                                 ,new XElement("Name",Students.name)
+                                                 ,new XElement("Gender",Students.Gender)
+                                                 ,new XElement("Marks",Students.Marks)
                                                  
                                                  
-            //                          ))
-            //    );
+                                      ))
+               );
 
 
            
-            //XMLDoc.Save(@"C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\Data.xml");
+            XMLDoc.Save(@"C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\Data.xml");
 
 
 
 
-
+            // Reteriving Data From Xml File Using LINQ:
 
             var name=from student in XDocument.Load(@"C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\LinqToXML\LinqToXML\Data.xml")
 
